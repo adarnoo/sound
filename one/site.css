@@ -69,6 +69,20 @@ audio::-webkit-media-controls-current-time-display {
   color: #fff;
 }
 
+/* Back Button */
+
+.so-back-button {
+  position: fixed;
+  width: 10%;
+  left: 0;
+  bottom: 0;
+}
+
+.so-back-image {
+  width: 100%;
+  opacity: 50%;
+}
+
 /* Text Styling */
 
 .so-title-container {
@@ -90,4 +104,22 @@ audio::-webkit-media-controls-current-time-display {
 
 .so-video-width {
   width: 100%;
+}
+
+.so-image {
+  width: 100%;
+}
+
+#player-container #play-pause {
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  z-index: 2;
+  background-image: url("../images/line.png");
+  background-repeat: no-repeat!important;
+  background-size: 100px;
+}
+
+.pause {
+   background-image: url("../images/line.png")!important;
 }
