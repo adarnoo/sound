@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Knif Mono';
+  font-size: 2vw;
+  color: black;
+}
+
+@font-face {
+  font-family: 'Knif Mono';
+  src: url('./typeface/knif-mono.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+audio {
+  padding: 0 5px;
+  width: 20%;
+  opacity: 50%;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.so-page {
+  position: relative;
+}
+
+/* Audio Styling */
+
+.so-audio-container {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
+.so-audio-container-inner {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.so-audio-container-inner--second {
+  padding: 0 10px 10px 10px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: grey;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: white;
+}
+
+/* Text Styling */
+
+.so-text-container {
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+  /* text-shadow: 1px 0px 10px black; */
+  padding-bottom: 50px;
+  width: 70%;
+  margin: 0 15%;
+}
+
+/* Image Styling */
+
+.so-image-container {
+  position: relative;
+  width: 70%;
+  margin: 0 15%;
+  padding: 100px 0 50px 0;
+}
+
+.so-image {
+  width: 48%;
+}
+
+.so-image--left {
+  left: 0;
+}
+
+.so-image--right {
+  right: 0;
+}
