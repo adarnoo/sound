@@ -5,12 +5,12 @@ body {
   font-family: 'Knif Mono';
   font-size: 2vw;
   color: black;
-  background-color: #D5D8DC;
+  background-color: white;
 }
 
 @font-face {
   font-family: 'Knif Mono';
-  src: url('./typeface/knif-mono.ttf') format('truetype');
+  src: url('../typeface/knif-mono.ttf') format('truetype');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -20,7 +20,7 @@ audio {
   padding: 0 5px;
   width: 20%;
   opacity: 50%;
-
+  z-index: 100;
 }
 
 a {
@@ -48,6 +48,7 @@ a:visited {
   z-index: 10;
   width: 100%;
   top: 0;
+  padding: 15px 0;
 }
 
 .so-audio-container-inner {
@@ -61,23 +62,11 @@ a:visited {
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: grey;
+  background-color: #D5D8DC;
 }
 
 audio::-webkit-media-controls-current-time-display {
-  color: white;
-}
-
-/* Text Styling */
-
-.so-text-container {
-  text-align: center;
-  color: black;
-  font-size: 2vw;
-  /* text-shadow: 1px 0px 10px black; */
-  padding-bottom: 50px;
-  width: 70%;
-  margin: 0 15%;
+  color: #fff;
 }
 
 /* Image Styling */
@@ -86,7 +75,7 @@ audio::-webkit-media-controls-current-time-display {
   position: relative;
   width: 70%;
   margin: 0 15%;
-  padding: 100px 0 50px 0;
+  padding: 125px 0 50px 0;
 }
 
 .so-image {
@@ -99,4 +88,13 @@ audio::-webkit-media-controls-current-time-display {
 
 .so-image--right {
   right: 0;
+}
+
+/* Video Styling */
+
+.so-video-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }

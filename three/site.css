@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Knif Mono';
+  font-size: 1vw;
+  color: black;
+  background-color: #ed1c24;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Knif Mono';
+  src: url('./typeface/knif-mono.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+audio {
+  width: 100%;
+  opacity: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  color: white;
+}
+
+.so-page {
+  position: relative;
+  width: 100%;
+}
+
+.so-page-inner {
+  z-index: 1;
+}
+
+
+/* Video Styling */
+
+.so-video-pair-container {
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.so-video-width {
+  width: 30%;
+  margin-top: 125px;
+  border: 2px red solid;
+  border-radius: 25px;
+}

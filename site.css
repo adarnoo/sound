@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Knif Mono';
-  font-size: 1vw;
+  font-size: 3vw;
   color: black;
   background-color: #EEEEEE;
 }
@@ -17,6 +17,7 @@ body {
   font-style: normal;
 }
 
+
 audio {
   padding: 0 5px;
   width: 100%;
@@ -25,15 +26,16 @@ audio {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 .so-page {
@@ -45,79 +47,37 @@ a:visited {
   z-index: 1;
 }
 
-/* Columns */
+/* Links Container */
 
-.so-column-section {
-  width: 90%;
-  margin: 0 5%;
-  padding: 25px 0;
-  justify-content: space-between;
-  display: flex;
-  float: left;
+.so-links-title-container {
+  width: 50%;
+  margin: 0 25%;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
 }
 
-.so-first-column {
-  width: 20%;
+.so-links-container {
+  width: 50%;
+  margin: 0 25%;
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  /* animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
 }
 
-.so-second-column {
-  width: 20%;
-}
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
 
-.so-third-column {
-  width: 20%;
-}
+  50% {
+    opacity: 0;
+  }
 
-.so-fourth-column {
-  width: 20%;
-}
-
-.so-spacing--xsmall {
-  margin-top: 25px;
-}
-
-.so-spacing--small {
-  margin-top: 75px;
-}
-
-.so-spacing--medium {
-  margin-top: 150px;
-}
-
-.so-spacing--large {
-  margin-top: 250px;
-}
-
-.so-spacing--xlarge {
-  margin-top: 400px;
-}
-
-/* Video Styling */
-
-.so-video-width {
-  width: 100%;
-  box-shadow: 5px 5px 5px grey;
-}
-
-/* Image Styling */
-
-.so-image-full {
-  width: 100%;
-  box-shadow: 5px 5px 5px grey;
-}
-
-/* Audio Styling */
-
-.so-audio-container {
-  z-index: 10;
-  width: 100%;
-  top: 0;
-}
-
-audio::-webkit-media-controls-panel {
-  background-color: #D5D8DC;
-}
-
-audio::-webkit-media-controls-current-time-display {
-  color: #fff;
+  100% {
+    opacity: 100%;
+  }
 }
