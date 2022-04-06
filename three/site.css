@@ -60,4 +60,5 @@ a:visited {
   margin-top: 125px;
   border: 2px red solid;
   border-radius: 25px;
+  pointer-events: none;
 }
