@@ -10,57 +10,43 @@
     <link rel="stylesheet" href="site.css">
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
     <script src="./custom.js" defer="defer"></script>
- </head>
+    </head>
     <body>
-      <div class="so-page">
-        <div class="so-page-inner">
-          <div class="so-links-title-container">
-            <p>Experiments</p>
+      <audio id="audio"></audio>
+      <div class="so-scan-container">
+        <div class="so-scan-container-inner">
+          <div class="so-play-stop-container">
+            <div class="so-play-stop-button">
+              <button onclick="play('./audio/laundromat-1.mp3')">PLAY</button>
+            </div>
+            <div class="so-play-stop-button">
+              <button onclick="stopAudio()">STOP</button>
+            </div>
           </div>
-          <div class="so-links-container">
-            <a href="./one">One</a>
-            <br>
-            <a href="./two">Two</a>
-            <br>
-            <a href="./three">Three</a>
-            <br>
+          <div class="so-video-margin">
+            <video class="so-video-width so-video-width--one" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
+            <video class="so-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
+            <video class="so-video-width so-video-width--three" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
+            <video class="so-video-width so-video-width--fourth" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
+            <video class="so-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
+            <video class="so-video-width so-video-width--five" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
+            <video class="so-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+              <source src="./images/washing-machine.mp4" type="video/mp4">
+            </video>
           </div>
-          <!-- <div class="so-column-section">
-            <div class="so-first-column">
-              <a href="./one">
-                <video class="so-video-width so-spacing--small" autoplay muted loop playsinline id="vid" preload="auto">
-                  <source src="./images/paper-bag.mp4" type="video/mp4">
-                </video>
-              </a>
-              <img class="so-image-full so-spacing--large" src="./images/choir.jpg">
-            </div>
-            <div class="so-second-column">
-              <a href="./one">
-                <video class="so-video-width so-spacing--xlarge" autoplay muted loop playsinline id="vid" preload="auto">
-                  <source src="./images/birds.mp4" type="video/mp4">
-                </video>
-              </a>
-              <video class="so-video-width so-spacing--xlarge" autoplay muted loop playsinline id="vid" preload="auto">
-                <source src="./images/circle-gradient-3.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="so-third-column">
-              <a href="./one">
-                <video class="so-video-width" autoplay muted loop playsinline id="vid" preload="auto">
-                  <source src="./images/mcqueen.mp4" type="video/mp4">
-                </video>
-              </a>
-            </div>
-            <div class="so-fourth-column so-spacing--medium">
-              <a href="./one">
-                <video class="so-video-width" autoplay muted loop playsinline id="vid" preload="auto">
-                  <source src="./images/jehovah.mp4" type="video/mp4">
-                </video>
-              </a>
-              <img class="so-image-full so-spacing--xsmall" src="./images/gogo.jpg">
-            </div>
-          </div> -->
         </div>
       </div>
     </body>
-</html>
+  </html>
