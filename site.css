@@ -27,10 +27,13 @@ img {
 
 .so-scan-container-inner {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .so-sign-image-container {
   width: 20%;
+  float: left;
 }
 
 .so-play-stop-container {
