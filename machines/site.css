@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: courier;
+  font-size: 3vw;
+  color: black;
+  background-color: rgb(243,241,234);
+  overflow: hidden;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: courier;
+  margin-bottom: 5px;
+  display: flex;
+  border: 1px solid black;
+  width: 50px;
+  justify-content: space-around;
+  padding: 2px;
+  margin: 5px;
+  border-radius: 50%;
+  height: 17px;
+  margin-right: 6px;
+  margin-top: 6px;
+  min-height: 17px;
+  min-width: 17px;
+  width: 17px;
+}
+
+.so-scan-container {
+  margin: 30px;
+}
+
+.so-scan-container-inner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.so-play-stop-container--fixed {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 20px;
+}
+
+.ao-play-pause {
+  width: 10px;
+}
+
+.so-video-container {
+  position: fixed;
+  width: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 32.5%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.so-video-width {
+  width: 100%;
+  padding: 10px;
+
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+/* Colours */
+
+.red {
+  background-color: red;
+  animation-name: flicker;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  border: 1px black dashed;
+}
+
+.red:hover {
+  background-color: red;
+  animation: none;
+}
+
+.pink-1 {
+  background-color: #e1c2ff;
+}
+
+.purple-1 {
+  background-color: #B490FF;
+}
+
+.green-1 {
+  background-color: #95E55B;
+}
+
+.green-2 {
+  background-color: #c9e2b5;
+}
+
+.green-3 {
+  background-color: #999972;
+}
+
+.blue-1 {
+  background-color: #359bdf;
+}
+
+.blue-2 {
+  background-color: #d5f0f0;
+}
+
+.orange-1 {
+  background-color: #FFA03A;
+}
+
+.grey-1 {
+  background-color: #898c8e;
+}
+
+.grey-2 {
+  background-color: #E3E3E3;
+}
+
+.brown-1 {
+  background-color: #bc936b;
+}
+
+.orange-2 {
+  background-color: #FFE000;
+}
