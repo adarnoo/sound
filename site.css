@@ -48,6 +48,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.so-image-container {
+  width: 10%;
+}
+
 .blue {
   color: blue;
   animation-name: flashing;
