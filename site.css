@@ -23,8 +23,9 @@ a:visited {
 }
 
 a:hover {
-  background-color: blue;
-  color: white;
+  animation-name: flashing;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
 }
 
 
@@ -52,8 +53,7 @@ a:hover {
   width: 10%;
 }
 
-.blue {
-  color: blue;
+.title {
   animation-name: flashing;
   animation-iteration-count: infinite;
   animation-duration: 1s;
@@ -81,7 +81,7 @@ a:hover {
     color: red;
   }
   80% {
-    background-color: purple;
+    background-color: red;
     color: white;
   }
 }
