@@ -6,15 +6,11 @@ body {
   font-family: helvetica;
   font-size: 3vw;
   color: black;
-  background-color: rgb(243,241,234);
   overflow: hidden;
 }
 
 button {
-  padding: 0;
-  border: 0;
-  background-color: rgb(243,241,234);
-  cursor: pointer;
+  background-color: white;
 }
 
 .so-scan-container {

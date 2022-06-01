@@ -6,30 +6,12 @@ body {
   font-family: courier;
   font-size: 3vw;
   color: black;
-  background-color: #EFEFEF;
   overflow: hidden;
 }
 
 button {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  font-family: courier;
-  margin-bottom: 5px;
-  display: flex;
-  border: 1px solid black;
-  width: 50px;
-  justify-content: space-around;
-  padding: 2px;
-  margin: 5px;
-  border-radius: 50%;
-  height: 17px;
-  margin-right: 6px;
-  margin-top: 6px;
-  min-height: 17px;
-  min-width: 17px;
-  width: 17px;
+  margin-right: 2px;
+  background-color: white;
 }
 
 .so-scan-container {
@@ -47,10 +29,6 @@ button {
   position: fixed;
   bottom: 0;
   padding-bottom: 20px;
-}
-
-.ao-play-pause {
-  width: 10px;
 }
 
 .so-video-container {
@@ -92,58 +70,9 @@ button {
   animation-name: flicker;
   animation-iteration-count: infinite;
   animation-duration: 4s;
-  border: 1px black dashed;
 }
 
 .red:hover {
   background-color: red;
   animation: none;
-}
-
-.pink-1 {
-  background-color: #e1c2ff;
-}
-
-.purple-1 {
-  background-color: #B490FF;
-}
-
-.green-1 {
-  background-color: #95E55B;
-}
-
-.green-2 {
-  background-color: #c9e2b5;
-}
-
-.green-3 {
-  background-color: #999972;
-}
-
-.blue-1 {
-  background-color: #359bdf;
-}
-
-.blue-2 {
-  background-color: #d5f0f0;
-}
-
-.orange-1 {
-  background-color: #FFA03A;
-}
-
-.grey-1 {
-  background-color: #898c8e;
-}
-
-.grey-2 {
-  background-color: #E3E3E3;
-}
-
-.brown-1 {
-  background-color: #bc936b;
-}
-
-.orange-2 {
-  background-color: #FFE000;
 }
