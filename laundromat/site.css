@@ -10,6 +10,7 @@ body {
 }
 
 button {
+  margin-right: 2px;
   background-color: white;
 }
 
@@ -67,4 +68,33 @@ button {
 
 .so-video-width--five {
   margin-top: 75px;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+/* Colours */
+
+.red {
+  background-color: red;
+  animation-name: flicker;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+.red:hover {
+  background-color: red;
+  animation: none;
 }
