@@ -12,7 +12,7 @@ body {
 
 @font-face {
   font-family: 'Lincoln';
-  src: url('./typefaces/lincoln.otf') format('truetype');
+  src: url('../typefaces/lincoln.otf') format('truetype');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -60,46 +60,24 @@ img {
   color: pink;
 }
 
-.tw-boxes-container {
-  padding-top: 150px;
+.tw-main-text-container {
+  padding-top: 300px;
   padding-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
   margin: 0 30px 30px 30px;
 }
 
-.tw-boxes-container--first {
-  float: left;
-  width: 30%
-}
-
-.tw-boxes-container--second {
-  float: left;
-  width: 30%
-}
-
-.tw-boxes-container--third {
-  float: left;
-  width: 30%
-}
-
-.tw-link-container {
-  border: 2px black solid;
+.tw-title-container {
+  position: fixed;
+  top: 150px;
   font-size: 30px;
   text-transform: uppercase;
-  padding: 10px;
-  text-align: center;
   font-weight: lighter;
-  margin-bottom: 50px;
 }
 
-.tw-link-container:hover {
-  background-color: pink;
-  transition: 0.1s;
-  cursor: pointer;
-}
-
-.tw-small-image {
-  margin-top: 20px;
-  margin-bottom: 15px;
+.tw-text-container {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0 125px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
