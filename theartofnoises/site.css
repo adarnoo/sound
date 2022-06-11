@@ -170,11 +170,9 @@ img {
   }
 
   .tw-washing-container {
-    width: 20%;
-    margin: 0 40%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
+    width: 30%;
+    margin: 0 35%;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
