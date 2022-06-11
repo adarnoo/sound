@@ -122,10 +122,6 @@ img {
   margin-bottom: 40px;
 }
 
-.tw-text-italic {
-  font-family: 'CMU Italic';
-}
-
 .tw-underline {
   text-decoration: underline;
 }
@@ -152,6 +148,13 @@ img {
   .tw-main-text-container {
     padding-top: 150px;
     margin: 0 75px;
+  }
+
+  .tw-text-container {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'CMU Normal';
+    margin-bottom: 30px;
   }
 
   .tw-image-container {
