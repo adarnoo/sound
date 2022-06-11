@@ -9,13 +9,22 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="site.css">
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
-    <script src="./custom.js" defer="defer"></script>
+    <script src="../custom.js" defer="defer"></script>
     </head>
     <body>
+      <audio id="audio"></audio>
       <div class="tw-page">
         <div class="tw-header-container">
           <div class="tw-header-container-inner">
             <a href="../"><span class="tw-pink-hover">24 HOUR LAUNDRY</span></a>
+          </div>
+        </div>
+        <div class="tw-button-container">
+          <div class="tw-play-button">
+            <button onclick="play('../audio/cat.mp3')">PLAY</button>
+          </div>
+          <div class="tw-stop-button">
+            <button onclick="stopAudio()">&nbsp;</button>
           </div>
         </div>
         <div class="tw-main-text-container">

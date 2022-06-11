@@ -51,6 +51,10 @@ img {
   width: 100%;
 }
 
+button {
+  margin-right: 5px;
+}
+
 .tw-page {
   position: relative;
   background-color: #c20000;
@@ -75,6 +79,17 @@ img {
 
 .tw-pink-hover:hover {
   color: pink;
+}
+
+.tw-button-container {
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 50px;
+  display: flex;
+}
+
+.tw-play-button {
+
 }
 
 .tw-main-text-container {
