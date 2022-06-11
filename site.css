@@ -13,7 +13,7 @@ body {
 @font-face {
   font-family: 'Lincoln';
   src: url('./typefaces/lincoln.otf') format('truetype');
-  font-display: swap;
+  font-display: block;
   font-weight: normal;
   font-style: normal;
 }
