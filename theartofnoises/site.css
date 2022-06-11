@@ -18,6 +18,22 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CMU Normal';
+  src: url('../typefaces/cmu-normal.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Italic';
+  src: url('../typefaces/cmu-italic.ttf') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -39,6 +55,7 @@ img {
   position: relative;
   background-color: #c20000;
   border-bottom: 2px black solid;
+  cursor: default;
 }
 
 .tw-header-container {
@@ -61,23 +78,100 @@ img {
 }
 
 .tw-main-text-container {
-  padding-top: 300px;
-  padding-bottom: 100px;
-  margin: 0 30px 30px 30px;
+  padding-top: 150px;
+  margin: 0 250px 0px 250px;
 }
 
 .tw-title-container {
-  position: fixed;
-  top: 150px;
-  font-size: 30px;
+  font-size: 50px;
   text-transform: uppercase;
-  font-weight: lighter;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .tw-text-container {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: lighter;
-  margin: 0 125px;
+  font-family: 'CMU Normal';
   margin-bottom: 20px;
-  text-transform: uppercase;
+}
+
+.tw-text-container--italic {
+  font-family: 'CMU Italic';
+}
+
+.tw-image-container {
+  width: 50%;
+  margin: 0 25%;
+  margin-top: 20px;
+}
+
+.tw-video-margin {
+  width: 70%;
+  margin: 0 15%;
+  margin-top: 20px;
+  z-index: 0;
+}
+
+.tw-image-annotation {
+  font-size: 15px;
+  font-family: 'CMU Normal';
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.tw-text-italic {
+  font-family: 'CMU Italic';
+}
+
+.tw-underline {
+  text-decoration: underline;
+}
+
+.tw-washing-container {
+  width: 20%;
+  margin: 0 40%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 700px) and
+(-webkit-min-device-pixel-ratio: 1) {
+
+  .tw-header-container-inner {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lincoln';
+    font-size: 60px;
+  }
+
+  .tw-main-text-container {
+    padding-top: 150px;
+    margin: 0 75px;
+  }
+
+  .tw-image-container {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .tw-video-margin {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .tw-washing-container {
+    width: 20%;
+    margin: 0 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  }
 }

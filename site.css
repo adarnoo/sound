@@ -62,10 +62,10 @@ img {
 
 .tw-boxes-container {
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: space-between;
-  margin: 0 30px 30px 30px;
+  margin: 0 75px 0px 75px;
 }
 
 .tw-boxes-container--first {
@@ -102,4 +102,44 @@ img {
 .tw-small-image {
   margin-top: 20px;
   margin-bottom: 15px;
+}
+
+.tw-small-video {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 700px) and
+(-webkit-min-device-pixel-ratio: 1) {
+
+  .tw-header-container-inner {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lincoln';
+    font-size: 60px;
+  }
+
+  .tw-boxes-container {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tw-boxes-container--first {
+    float: left;
+    width: 100%
+  }
+
+  .tw-boxes-container--second {
+    float: left;
+    width: 100%
+  }
+
+  .tw-boxes-container--third {
+    float: left;
+    width: 100%
+  }
 }
