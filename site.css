@@ -35,10 +35,42 @@ img {
   width: 100%;
 }
 
+button {
+  background-color: #c20000;
+  border: none;
+  cursor: pointer;
+}
+
 .tw-page {
   position: relative;
   background-color: #c20000;
   border-bottom: 2px black solid;
+}
+
+.tw-landing-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #c20000;
+  z-index: 1000;
+}
+
+.tw-landing-container--close {
+  background-color: black;
+}
+
+.tw-landing-image {
+  width: 100%;
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10%;
+  z-index: 1000;
+}
+
+.tw-toggle--close {
+  display: none;
 }
 
 .tw-header-container {
