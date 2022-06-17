@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="ut-8">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewpoint" content="width=device-width.initial-scale=1.0">
+    <title>24 Hour Laundry</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="site.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <script src="../custom.js" defer="defer"></script>
+    </head>
+    <body>
+      <audio id="audio"></audio>
+      <div class="tw-page">
+        <div class="tw-header-container">
+          <div class="tw-header-container-inner">
+            <a href="../"><span class="tw-pink-hover">24 HOUR LAUNDRY</span></a>
+          </div>
+        </div>
+        <div class="tw-main-content-container">
+          <div class="tw-main-content-container-inner">
+            <div class="tw-play-stop-container">
+              <div class="tw-play-stop-button">
+                <button onclick="play('../audio/fantasia-backwards.mp3')">Play</button>
+              </div>
+            </div>
+            <div class="tw-play-stop-container">
+              <div class="tw-play-stop-button">
+                <button onclick="play('../audio/tornado.mp3')">Play</button>
+              </div>
+            </div>
+            <div class="tw-play-stop-container">
+              <div class="tw-play-stop-button">
+                <button onclick="play('../audio/kate.mp3')">Play</button>
+              </div>
+            </div>
+            <div class="tw-play-stop-container">
+              <div class="tw-play-stop-button">
+                <button class="red" onclick="stopAudio()">Stop</button>
+              </div>
+            </div>
+            <div class="tw-video-margin">
+              <video class="tw-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+                <source src="../images/birds-resize.mp4" type="video/mp4">
+              </video>
+              <video class="tw-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+                <source src="../images/plastic-bag-resize.mp4" type="video/mp4">
+              </video>
+              <video class="tw-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+                <source src="../images/mcqueen.mp4" type="video/mp4">
+              </video>
+              <video class="tw-video-width" autoplay muted loop playsinline id="vid" preload="auto">
+                <source src="../images/jehovah-resize.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>

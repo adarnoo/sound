@@ -6,7 +6,7 @@ body {
   font-family: helvetica;
   font-size: 10px;
   color: black;
-  background-color: white;
+  background-color: #c199ff;
   overflow: hidden;
 }
 
@@ -70,6 +70,7 @@ button {
   position: relative;
   border-bottom: 2px black solid;
   cursor: default;
+  background-color: white;
 }
 
 .tw-header-container {
@@ -112,32 +113,16 @@ button {
   width: 100%;
   justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
 }
 
 .tw-video-width {
-  width: 12%;
+  width: 24%;
 }
 
 .tw-video-width:hover {
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-  transition-duration: 1s;
-}
-
-.tw-video-width--one {
-  margin-top: 200px;
-}
-
-.tw-video-width--three {
-  margin-top: 10px;
-}
-
-.tw-video-width--fourth {
-  margin-top: 25px;
-}
-
-.tw-video-width--five {
-  margin-top: 75px;
+  opacity: 1;
 }
 
 .red {
@@ -148,6 +133,7 @@ button {
 @media only screen and (min-device-width: 320px) and
 (max-device-width: 700px) and
 (-webkit-min-device-pixel-ratio: 1) {
+
 
   button {
     margin-bottom: 5px;
@@ -168,6 +154,6 @@ button {
   }
 
   .tw-video-width {
-    width: 13%;
-    transition-duration: 1s;
+    width: 24%;
+    margin-bottom: 10px;
   }
