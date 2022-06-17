@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: helvetica;
+  font-size: 3vw;
+  color: black;
+  overflow: hidden;
+}
+
+button {
+  margin-right: 2px;
+  background-color: white;
+}
+
+.so-scan-container {
+  margin: 30px;
+}
+
+.so-scan-container-inner {
+  width: 100%;
+}
+
+.so-play-stop-container {
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.so-play-stop-button {
+  margin-right: 10px;
+}
+
+.ao-play-pause {
+  width: 10px;
+}
+
+.so-video-margin {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.so-video-width {
+  width: 12%;
+  /* filter: blur(10px);
+  -webkit-filter: blur(10px); */
+  transition-duration: 1s;
+}
+
+.so-video-width:hover {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transition-duration: 1s;
+}
+
+.so-video-width--one {
+  margin-top: 250px;
+}
+
+.so-video-width--three {
+  margin-top: 50px;
+}
+
+.so-video-width--fourth {
+  margin-top: 25px;
+}
+
+.so-video-width--five {
+  margin-top: 75px;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+
+/* Colours */
+
+.red {
+  background-color: red;
+  animation-name: flicker;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+.red:hover {
+  background-color: red;
+  animation: none;
+}
