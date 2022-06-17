@@ -4,97 +4,166 @@ body {
   width: 100%;
   height: 100%;
   font-family: helvetica;
-  font-size: 3vw;
+  font-size: 10px;
   color: black;
+  background-color: white;
   overflow: hidden;
 }
 
+@font-face {
+  font-family: 'Lincoln';
+  src: url('../typefaces/lincoln.otf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Normal';
+  src: url('../typefaces/cmu-normal.ttf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Italic';
+  src: url('../typefaces/cmu-italic.ttf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
 button {
-  margin-right: 2px;
-  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: pink;
+  margin-bottom: 5px;
+  font-family: "CMU Normal";
+  font-weight: bolder;
+  padding: 0 10px;
+  cursor: pointer;
 }
 
-.so-scan-container {
-  margin: 30px;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.so-scan-container-inner {
+a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: none;
+}
+
+img {
   width: 100%;
 }
 
-.so-play-stop-container {
-  margin-bottom: 25px;
+button {
+  margin-right: 5px;
+}
+
+.tw-page {
+  position: relative;
+  border-bottom: 2px black solid;
+  cursor: default;
+}
+
+.tw-header-container {
+  width: 100%;
+  background-color: #c199ff;
+  position: fixed;
+  border-bottom: 2px black solid;
+}
+
+.tw-header-container-inner {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Lincoln';
+  font-size: 40px;
+}
+
+.tw-pink-hover:hover {
+  color: pink;
+}
+
+.tw-main-content-container {
+  padding-top: 150px;
+  margin: 0 75px 0px 75px;
+  height: 100vh;
+}
+
+.tw-main-content-container-inner {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  float: left;
 }
 
-.so-play-stop-button {
-  margin-right: 10px;
+.tw-underline {
+  text-decoration: underline;
 }
 
-.ao-play-pause {
-  width: 10px;
-}
-
-.so-video-margin {
+.tw-video-margin {
   width: 100%;
   justify-content: space-between;
   display: flex;
 }
 
-.so-video-width {
+.tw-video-width {
   width: 12%;
-  /* filter: blur(10px);
-  -webkit-filter: blur(10px); */
-  transition-duration: 1s;
 }
 
-.so-video-width:hover {
+.tw-video-width:hover {
   filter: blur(0px);
   -webkit-filter: blur(0px);
   transition-duration: 1s;
 }
 
-.so-video-width--one {
-  margin-top: 250px;
+.tw-video-width--one {
+  margin-top: 200px;
 }
 
-.so-video-width--three {
-  margin-top: 50px;
+.tw-video-width--three {
+  margin-top: 10px;
 }
 
-.so-video-width--fourth {
+.tw-video-width--fourth {
   margin-top: 25px;
 }
 
-.so-video-width--five {
+.tw-video-width--five {
   margin-top: 75px;
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-}
 
-/* Colours */
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 700px) and
+(-webkit-min-device-pixel-ratio: 1) {
 
-.red {
-  background-color: red;
-  animation-name: flicker;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
-}
+  button {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
 
-.red:hover {
-  background-color: red;
-  animation: none;
-}
+  .tw-header-container-inner {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lincoln';
+    font-size: 60px;
+  }
+
+  .tw-main-content-container {
+    padding-top: 150px;
+    margin: 0 75px;
+  }
+
+  .tw-video-width {
+    width: 13%;
+    transition-duration: 1s;
+  }
