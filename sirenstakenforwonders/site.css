@@ -88,13 +88,9 @@ button {
   display: flex;
 }
 
-.tw-play-button {
-
-}
-
 .tw-main-text-container {
   padding-top: 150px;
-  margin: 0 250px 0px 250px;
+  margin: 0 300px 0px 300px;
 }
 
 .tw-title-container {
