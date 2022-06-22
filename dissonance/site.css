@@ -70,7 +70,7 @@ button {
   position: relative;
   border-bottom: 2px black solid;
   cursor: default;
-  background-color: white;
+  background-color: #c20000;
 }
 
 .tw-header-container {

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: helvetica;
+  font-size: 10px;
+  color: black;
+  background-color: white;
+  background-color: #c199ff;
+}
+
+@font-face {
+  font-family: 'Lincoln';
+  src: url('../typefaces/lincoln.otf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background-color: #c20000;
+  border: none;
+  cursor: pointer;
+}
+
+.tw-page {
+  position: relative;
+  background-color: #c20000;
+  border-bottom: 2px black solid;
+}
+
+.tw-landing-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #c20000;
+  z-index: 1000;
+}
+
+.tw-landing-container--close {
+  background-color: black;
+}
+
+.tw-landing-image {
+  width: 100%;
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10%;
+  z-index: 1000;
+}
+
+.tw-toggle--close {
+  display: none;
+}
+
+.tw-header-container {
+  width: 100%;
+  background-color: #c199ff;
+  position: fixed;
+  border-bottom: 2px black solid;
+}
+
+.tw-header-container-inner {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Lincoln';
+  font-size: 40px;
+}
+
+.tw-pink-hover:hover {
+  color: pink;
+}
+
+.tw-image-container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 75px 0px 75px;
+}
+
+.tw-image {
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 50px;
+
+}
+
+@media only screen and (min-device-width: 320px) and
+(max-device-width: 700px) and
+(-webkit-min-device-pixel-ratio: 1) {
+
+  .tw-header-container-inner {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lincoln';
+    font-size: 60px;
+  }
+
+  .tw-boxes-container {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tw-boxes-container--first {
+    float: left;
+    width: 100%
+  }
+
+  .tw-boxes-container--second {
+    float: left;
+    width: 100%
+  }
+
+  .tw-boxes-container--third {
+    float: left;
+    width: 100%
+  }
+
+  .tw-link-container {
+    border: 2px black solid;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 30px 15px 15px 15px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 50px;
+  }
+}
