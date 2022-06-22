@@ -148,7 +148,8 @@ img {
 
   .tw-main-text-container {
     padding-top: 150px;
-    margin: 0 75px;
+    margin: 0 10%;
+    width: 80%;
   }
 
   .tw-text-container {
