@@ -90,7 +90,8 @@ button {
 
 .tw-main-text-container {
   padding-top: 150px;
-  margin: 0 300px 0px 300px;
+  width: 60%;
+  margin: 20%;
 }
 
 .tw-title-container {
